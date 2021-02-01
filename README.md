@@ -39,10 +39,3 @@
 | DELETE | /meetingRetro/id        | req.query.id               | delete Retro meeting by id               |
 
 ---
-
-### Websockets
-
-| Method  | Path     | Additional Info               | Result                                               | Response |
-| ------- | -------- | ----------------------------- | ---------------------------------------------------- | -------- |
-| CONNECT | /sockets | socket.handshake.query.roomID | connect to websocket server                          |          |
-| POST    | /sockets | socket.handshake.query.roomID | post message, broadcast to everyone in the same room |          |
